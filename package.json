@@ -1,0 +1,26 @@
+{
+  "author": "teo-garcia",
+  "exports": {
+    ".": {
+      "default": "./react.js",
+      "types": "./react.d.ts"
+    },
+    "./next": {
+      "default": "./next.js",
+      "types": "./next.d.ts"
+    }
+  },
+  "main": "./react.js",
+  "name": "@teo-garcia/vitest-config-shared",
+  "peerDependencies": {
+    "@vitejs/plugin-react": "^4.0.0",
+    "@vitest/browser": "^3.0.0",
+    "playwright-core": "^1.44.0",
+    "vitest": "^3.0.0",
+    "vite-tsconfig-paths": "^5.0.0"
+  },
+  "private": false,
+  "type": "module",
+  "types": "./react.d.ts",
+  "version": "0.1.0"
+}
