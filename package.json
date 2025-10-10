@@ -22,5 +22,9 @@
   "private": false,
   "type": "module",
   "types": "./react.d.ts",
-  "version": "0.1.0"
+  "version": "0.1.0",
+  "scripts": {
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  }
 }
