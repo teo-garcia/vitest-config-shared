@@ -1,6 +1,6 @@
 # @teo-garcia/vitest-config-shared
 
-Shared Vitest configuration for React and Next.js projects.
+Shared Vitest configuration for React, Next.js, and Node.js projects.
 
 ## Installation
 
@@ -8,7 +8,7 @@ Shared Vitest configuration for React and Next.js projects.
 npm install --save-dev @teo-garcia/vitest-config-shared
 ```
 
-You'll also need to install the peer dependencies:
+Install peer dependencies:
 
 ```bash
 npm install --save-dev @testing-library/jest-dom @testing-library/react @vitejs/plugin-react @vitest/browser vitest vite-tsconfig-paths playwright-core
@@ -16,42 +16,39 @@ npm install --save-dev @testing-library/jest-dom @testing-library/react @vitejs/
 
 ## Usage
 
-### For React Projects
-
-Create a `vitest.config.ts` file in your project root:
+### React Projects
 
 ```typescript
-import { defineConfig } from "vitest/config";
-import sharedConfig from "@teo-garcia/vitest-config-shared";
+// vitest.config.ts
+import { defineConfig } from 'vitest/config'
+import sharedConfig from '@teo-garcia/vitest-config-shared'
 
-export default defineConfig(sharedConfig);
+export default defineConfig(sharedConfig)
 ```
 
-### For Next.js Projects
-
-Create a `vitest.config.ts` file in your project root:
+### Next.js Projects
 
 ```typescript
-import { defineConfig } from "vitest/config";
-import sharedConfig from "@teo-garcia/vitest-config-shared/next";
+// vitest.config.ts
+import { defineConfig } from 'vitest/config'
+import sharedConfig from '@teo-garcia/vitest-config-shared/next'
 
-export default defineConfig(sharedConfig);
+export default defineConfig(sharedConfig)
 ```
 
-### For General/Node.js Projects
-
-Create a `vitest.config.ts` file in your project root:
+### Node.js Projects
 
 ```typescript
-import { defineConfig } from "vitest/config";
-import sharedConfig from "@teo-garcia/vitest-config-shared/general";
+// vitest.config.ts
+import { defineConfig } from 'vitest/config'
+import sharedConfig from '@teo-garcia/vitest-config-shared/general'
 
-export default defineConfig(sharedConfig);
+export default defineConfig(sharedConfig)
 ```
 
-## Package.json Scripts
+## Scripts
 
-Add these scripts to your `package.json`:
+Add these to your `package.json`:
 
 ```json
 {
@@ -63,3 +60,7 @@ Add these scripts to your `package.json`:
   }
 }
 ```
+
+## License
+
+MIT
