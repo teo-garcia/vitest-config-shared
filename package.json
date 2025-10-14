@@ -13,7 +13,7 @@
   "main": "./react.js",
   "name": "@teo-garcia/vitest-config-shared",
   "peerDependencies": {
-    "@vitejs/plugin-react": "^4.0.0",
+    "@vitejs/plugin-react": "^5.0.4",
     "@vitest/browser": "^3.0.0",
     "playwright-core": "^1.44.0",
     "vitest": "^3.0.0",
@@ -22,7 +22,7 @@
   "private": false,
   "type": "module",
   "types": "./react.d.ts",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "scripts": {
     "format": "prettier --write .",
     "format:check": "prettier --check ."
