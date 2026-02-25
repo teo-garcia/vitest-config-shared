@@ -1,3 +1,4 @@
+import { playwright } from "@vitest/browser-playwright";
 import react from "@vitejs/plugin-react";
 
 /**
@@ -17,9 +18,8 @@ const config = {
     include: ["{app,src}/**/*.{test,spec}.{ts,tsx}"],
     browser: {
       enabled: true,
-      provider: "playwright",
-      name: "chromium",
-      headless: true,
+      provider: playwright({ launch: { headless: true } }),
+      instances: [{ browser: "chromium" }],
     },
   },
 };
