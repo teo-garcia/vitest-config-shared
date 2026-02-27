@@ -16,10 +16,33 @@ const config = {
   test: {
     globals: true,
     include: ["{app,src}/**/*.{test,spec}.{ts,tsx}"],
+    testTimeout: 10_000,
+    hookTimeout: 10_000,
+    teardownTimeout: 5_000,
+    sequence: {
+      hooks: "stack",
+    },
+    coverage: {
+      provider: "v8",
+      include: ["{app,src}/**/*.{ts,tsx}"],
+      exclude: [
+        "**/*.{test,spec}.{ts,tsx}",
+        "**/__mocks__/**",
+        "**/__screenshots__/**",
+        "**/lib/test/**",
+        "**/lib/mocks/**",
+      ],
+    },
     browser: {
       enabled: true,
-      provider: playwright({ launch: { headless: true } }),
-      instances: [{ browser: "chromium" }],
+      provider: playwright(),
+      instances: [
+        {
+          browser: "chromium",
+          launch: { headless: true },
+          context: { viewport: { width: 1280, height: 720 } },
+        },
+      ],
     },
   },
 };
