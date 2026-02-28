@@ -19,9 +19,13 @@
     "vite-tsconfig-paths": "^6.0.0"
   },
   "private": false,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/teo-garcia/vitest-config-shared.git"
+  },
   "type": "module",
   "types": "./react.d.ts",
-  "version": "0.3.5",
+  "version": "0.3.6",
   "scripts": {
     "format": "prettier --write .",
     "format:check": "prettier --check ."
