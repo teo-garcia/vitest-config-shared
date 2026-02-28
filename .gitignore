@@ -1,25 +1,11 @@
-# Dependencies
-/node_modules
-
-# Build artifacts
-/dist
-
-# Logs
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-pnpm-debug.log*
-
-# Lock file
-pnpm-lock.yaml
-
-# Environment variables
+node_modules/
+dist/
+coverage/
+*.tsbuildinfo
+*.tgz
+*.log
+.DS_Store
 .env
 .env.local
-.env.development.local
-.env.test.local
-.env.production.local
-
-# OS-specific
-.DS_Store
-Thumbs.db
+.vscode/
+.idea/
