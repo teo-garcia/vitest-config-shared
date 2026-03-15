@@ -15,8 +15,8 @@
   "peerDependencies": {
     "@vitejs/plugin-react": "^5.0.4",
     "@vitest/browser-playwright": "^4.0.0",
-    "vitest": "^4.0.0",
-    "vite-tsconfig-paths": "^6.0.0"
+    "vite-tsconfig-paths": "^6.0.0",
+    "vitest": "^4.0.0"
   },
   "private": false,
   "repository": {
@@ -28,7 +28,11 @@
   "packageManager": "pnpm@10.2.0",
   "version": "0.3.6",
   "scripts": {
+    "check": "pnpm format:check",
     "format": "prettier --write .",
     "format:check": "prettier --check ."
+  },
+  "devDependencies": {
+    "prettier": "^3.8.1"
   }
 }

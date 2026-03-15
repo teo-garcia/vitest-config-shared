@@ -1,5 +1,5 @@
-import { playwright } from "@vitest/browser-playwright";
-import react from "@vitejs/plugin-react";
+import { playwright } from '@vitest/browser-playwright'
+import react from '@vitejs/plugin-react'
 
 /**
  * Shared Vitest configuration for React projects.
@@ -15,22 +15,22 @@ const config = {
   plugins: [react()],
   test: {
     globals: true,
-    include: ["{app,src}/**/*.{test,spec}.{ts,tsx}"],
+    include: ['{app,src}/**/*.{test,spec}.{ts,tsx}'],
     testTimeout: 10_000,
     hookTimeout: 10_000,
     teardownTimeout: 5_000,
     sequence: {
-      hooks: "stack",
+      hooks: 'stack',
     },
     coverage: {
-      provider: "v8",
-      include: ["{app,src}/**/*.{ts,tsx}"],
+      provider: 'v8',
+      include: ['{app,src}/**/*.{ts,tsx}'],
       exclude: [
-        "**/*.{test,spec}.{ts,tsx}",
-        "**/__mocks__/**",
-        "**/__screenshots__/**",
-        "**/lib/test/**",
-        "**/lib/mocks/**",
+        '**/*.{test,spec}.{ts,tsx}',
+        '**/__mocks__/**',
+        '**/__screenshots__/**',
+        '**/lib/test/**',
+        '**/lib/mocks/**',
       ],
     },
     browser: {
@@ -38,13 +38,13 @@ const config = {
       provider: playwright(),
       instances: [
         {
-          browser: "chromium",
+          browser: 'chromium',
           launch: { headless: true },
           context: { viewport: { width: 1280, height: 720 } },
         },
       ],
     },
   },
-};
+}
 
-export default config;
+export default config

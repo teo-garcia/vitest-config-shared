@@ -1,6 +1,6 @@
-import { mergeConfig } from "vite";
-import tsconfigPaths from "vite-tsconfig-paths";
-import reactConfig from "./react.js";
+import { mergeConfig } from 'vite'
+import tsconfigPaths from 'vite-tsconfig-paths'
+import reactConfig from './react.js'
 
 /**
  * Shared Vitest configuration for Next.js projects.
@@ -12,10 +12,10 @@ const nextConfig = mergeConfig(reactConfig, {
   plugins: [tsconfigPaths()],
   test: {
     include: [
-      "app/**/*.{test,spec}.{ts,tsx}",
-      "{src,lib,components}/**/*.{test,spec}.{ts,tsx}",
+      'app/**/*.{test,spec}.{ts,tsx}',
+      '{src,lib,components}/**/*.{test,spec}.{ts,tsx}',
     ],
   },
-});
+})
 
-export default nextConfig;
+export default nextConfig

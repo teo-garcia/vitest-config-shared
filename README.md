@@ -16,10 +16,10 @@ Part of the [@teo-garcia/templates](https://github.com/teo-garcia/templates) eco
 
 ## Features
 
-| Config    | Target     | Includes                                                              |
-| --------- | ---------- | --------------------------------------------------------------------- |
-| **react** | React/Vite | Browser mode (Playwright), React plugin, globals, coverage defaults  |
-| **next**  | Next.js    | React config + `vite-tsconfig-paths` + Next-oriented test globs       |
+| Config    | Target     | Includes                                                            |
+| --------- | ---------- | ------------------------------------------------------------------- |
+| **react** | React/Vite | Browser mode (Playwright), React plugin, globals, coverage defaults |
+| **next**  | Next.js    | React config + `vite-tsconfig-paths` + Next-oriented test globs     |
 
 ## Requirements
 
@@ -102,6 +102,21 @@ export default mergeConfig(
 }
 ```
 
+## Related Packages
+
+| Package                                                                                    | Description         |
+| ------------------------------------------------------------------------------------------ | ------------------- |
+| [@teo-garcia/eslint-config-shared](https://github.com/teo-garcia/eslint-config-shared)     | ESLint rules        |
+| [@teo-garcia/prettier-config-shared](https://github.com/teo-garcia/prettier-config-shared) | Prettier formatting |
+| [@teo-garcia/tsconfig-shared](https://github.com/teo-garcia/tsconfig-shared)               | TypeScript settings |
+| [@teo-garcia/react-shared](https://github.com/teo-garcia/react-shared)                     | Shared React primitives |
+
 ## License
 
 MIT
+
+---
+
+<div align="center">
+  <sub>Built by <a href="https://github.com/teo-garcia">teo-garcia</a></sub>
+</div>
