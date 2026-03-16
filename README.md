@@ -8,7 +8,8 @@
 [![npm](https://img.shields.io/npm/v/@teo-garcia/vitest-config-shared?color=blue)](https://www.npmjs.com/package/@teo-garcia/vitest-config-shared)
 [![Vitest](https://img.shields.io/badge/Vitest-4-6E9F18?logo=vitest&logoColor=white)](https://vitest.dev)
 
-Part of the [@teo-garcia/templates](https://github.com/teo-garcia/templates) ecosystem
+Part of the [@teo-garcia/templates](https://github.com/teo-garcia/templates)
+ecosystem
 
 </div>
 
@@ -59,7 +60,8 @@ export default defineConfig(sharedConfig)
 
 ### Add local setup files (optional)
 
-If your app needs extra setup (for example `@testing-library/jest-dom`), merge your local config:
+If your app needs extra setup (for example `@testing-library/jest-dom`), merge
+your local config:
 
 ```ts
 import sharedConfig from '@teo-garcia/vitest-config-shared'
@@ -104,11 +106,11 @@ export default mergeConfig(
 
 ## Related Packages
 
-| Package                                                                                    | Description         |
-| ------------------------------------------------------------------------------------------ | ------------------- |
-| [@teo-garcia/eslint-config-shared](https://github.com/teo-garcia/eslint-config-shared)     | ESLint rules        |
-| [@teo-garcia/prettier-config-shared](https://github.com/teo-garcia/prettier-config-shared) | Prettier formatting |
-| [@teo-garcia/tsconfig-shared](https://github.com/teo-garcia/tsconfig-shared)               | TypeScript settings |
+| Package                                                                                    | Description             |
+| ------------------------------------------------------------------------------------------ | ----------------------- |
+| [@teo-garcia/eslint-config-shared](https://github.com/teo-garcia/eslint-config-shared)     | ESLint rules            |
+| [@teo-garcia/prettier-config-shared](https://github.com/teo-garcia/prettier-config-shared) | Prettier formatting     |
+| [@teo-garcia/tsconfig-shared](https://github.com/teo-garcia/tsconfig-shared)               | TypeScript settings     |
 | [@teo-garcia/react-shared](https://github.com/teo-garcia/react-shared)                     | Shared React primitives |
 
 ## License
