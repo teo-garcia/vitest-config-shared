@@ -37,7 +37,7 @@
     "format:check": "prettier --check .",
     "prepare": "husky",
     "smoke:consumer": "node scripts/consumer-smoke.mjs",
-    "typecheck": "tsc --noEmit --incremental false"
+    "typecheck": "tsc --noEmit"
   },
   "devDependencies": {
     "@teo-garcia/prettier-config-shared": "^0.2.9",
