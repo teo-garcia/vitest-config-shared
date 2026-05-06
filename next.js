@@ -1,4 +1,4 @@
-import { mergeConfig } from 'vite'
+import { mergeConfig } from 'vitest/config'
 import tsconfigPaths from 'vite-tsconfig-paths'
 import reactConfig from './react.js'
 

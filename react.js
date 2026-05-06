@@ -36,11 +36,11 @@ const config = {
     browser: {
       enabled: true,
       provider: playwright(),
+      headless: true,
       instances: [
         {
           browser: 'chromium',
-          launch: { headless: true },
-          context: { viewport: { width: 1280, height: 720 } },
+          viewport: { width: 1280, height: 720 },
         },
       ],
     },
