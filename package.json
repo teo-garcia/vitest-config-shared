@@ -42,7 +42,7 @@
   "devDependencies": {
     "@teo-garcia/prettier-config-shared": "^0.2.9",
     "@teo-garcia/tsconfig-shared": "^0.2.0",
-    "@vitejs/plugin-react": "^5.0.4",
+    "@vitejs/plugin-react": "^6.0.0",
     "@vitest/browser-playwright": "^4.0.0",
     "husky": "^9.1.7",
     "lint-staged": "^17.0.0",
