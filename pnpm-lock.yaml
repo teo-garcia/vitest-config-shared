@@ -10,10 +10,10 @@ importers:
     devDependencies:
       '@teo-garcia/prettier-config-shared':
         specifier: ^0.2.9
-        version: 0.2.9(prettier@3.8.3)
+        version: 0.2.10(prettier@3.8.3)
       '@teo-garcia/tsconfig-shared':
         specifier: ^0.2.0
-        version: 0.2.0
+        version: 0.2.1
       '@vitejs/plugin-react':
         specifier: ^5.0.4
         version: 5.2.0(vite@8.0.14(@types/node@24.0.9)(yaml@2.9.0))
@@ -299,14 +299,15 @@ packages:
   '@standard-schema/spec@1.1.0':
     resolution: {integrity: sha512-l2aFy5jALhniG5HgqrD6jXLi/rUWrKvqN/qJx6yoJsgKhblVd+iqqU4RCXavm/jPityDo5TCvKMnpjKnOriy0w==}
 
-  '@teo-garcia/prettier-config-shared@0.2.9':
-    resolution: {integrity: sha512-G1X4yBPxe+Fn1XBB9N+6DPZM+0+n+Ec1ofoXcAbqfzOPaDdJKo7LAzhf87HiWyfSbMzgclJDyvAhO4fWQ2LPrQ==}
+  '@teo-garcia/prettier-config-shared@0.2.10':
+    resolution: {integrity: sha512-obCS5hxBBtQ/we0Czk9iiStU6ddtJLWTthDrwcTIRNFCSECLbvqrjabviaW+l7uVp972x3JQUyZAOopaapV2Lg==}
     engines: {node: '>=24'}
     peerDependencies:
       prettier: ^3.0.0
 
-  '@teo-garcia/tsconfig-shared@0.2.0':
-    resolution: {integrity: sha512-HIhMuGDzoqd2JNXfmzG4HQZWpPOs7kFsxo2XwIOUZg0uN8/iGEopTMDcX0fHjivgH1WJqHp1j+hh17hNa/Dwqw==}
+  '@teo-garcia/tsconfig-shared@0.2.1':
+    resolution: {integrity: sha512-ypVxJWCc45BLvvXKjGpqHG2qw9qyGqPt42iQLFDA+hehJGE1dnnLIOKsyKX4v15n4FJ4THMiUFaHBKF1z+mNdw==}
+    engines: {node: '>=24'}
 
   '@tybys/wasm-util@0.10.2':
     resolution: {integrity: sha512-RoBvJ2X0wuKlWFIjrwffGw1IqZHKQqzIchKaadZZfnNpsAYp2mM0h36JtPCjNDAHGgYez/15uMBpfGwchhiMgg==}
@@ -1371,11 +1372,11 @@ snapshots:
 
   '@standard-schema/spec@1.1.0': {}
 
-  '@teo-garcia/prettier-config-shared@0.2.9(prettier@3.8.3)':
+  '@teo-garcia/prettier-config-shared@0.2.10(prettier@3.8.3)':
     dependencies:
       prettier: 3.8.3
 
-  '@teo-garcia/tsconfig-shared@0.2.0': {}
+  '@teo-garcia/tsconfig-shared@0.2.1': {}
 
   '@tybys/wasm-util@0.10.2':
     dependencies:
