@@ -61,6 +61,8 @@ execFileSync('pnpm', ['install', '--ignore-scripts'], {
 const reactConfig = (await import('@teo-garcia/vitest-config-shared')).default
 const nextConfig = (await import('@teo-garcia/vitest-config-shared/next'))
   .default
+const angularConfig = (await import('@teo-garcia/vitest-config-shared/angular'))
+  .default
 
 if (
   !reactConfig.test?.browser?.enabled ||
@@ -72,6 +74,13 @@ if (
 
 if (!nextConfig.test?.include?.some((pattern) => pattern.startsWith('app/'))) {
   throw new Error('unexpected next include patterns')
+}
+
+if (
+  angularConfig.test?.environment !== 'jsdom' ||
+  !angularConfig.test?.include?.some((pattern) => pattern.includes('src/'))
+) {
+  throw new Error('unexpected angular config shape')
 }
 
 console.log('vitest packed consumer smoke ok')

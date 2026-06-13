@@ -56,7 +56,6 @@ ecosystem
 | `@teo-garcia/eslint-config-shared`   | ESLint rules        |
 | `@teo-garcia/prettier-config-shared` | Prettier formatting |
 | `@teo-garcia/tsconfig-shared`        | TypeScript settings |
-| `@teo-garcia/react-shared`           | React primitives    |
 
 ---
 
