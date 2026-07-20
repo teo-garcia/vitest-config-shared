@@ -20,7 +20,6 @@
     "@vitejs/plugin-react": "^5.0.4 || ^6.0.0",
     "@vitest/browser-playwright": "^4.0.0",
     "jsdom": "^26.0.0 || ^27.0.0",
-    "vite-tsconfig-paths": "^6.0.0",
     "vitest": "^4.0.0"
   },
   "private": false,
@@ -53,7 +52,6 @@
     "lint-staged": "^17.0.0",
     "prettier": "^3.8.1",
     "vite": "^8.0.0",
-    "vite-tsconfig-paths": "^6.0.0",
     "vitest": "^4.0.0"
   }
 }

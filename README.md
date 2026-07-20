@@ -20,7 +20,7 @@ ecosystem
 | Config    | Target     | Includes                                                            |
 | --------- | ---------- | ------------------------------------------------------------------- |
 | **react** | React/Vite | Browser mode (Playwright), React plugin, globals, coverage defaults |
-| **next**  | Next.js    | React config + vite-tsconfig-paths + Next-oriented test globs       |
+| **next**  | Next.js    | React config + native tsconfig paths + Next-oriented test globs     |
 
 ---
 

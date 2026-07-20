@@ -76,6 +76,10 @@ if (!nextConfig.test?.include?.some((pattern) => pattern.startsWith('app/'))) {
   throw new Error('unexpected next include patterns')
 }
 
+if (nextConfig.resolve?.tsconfigPaths !== true) {
+  throw new Error('Next config does not enable native tsconfig paths')
+}
+
 if (
   angularConfig.test?.environment !== 'jsdom' ||
   !angularConfig.test?.include?.some((pattern) => pattern.includes('src/'))

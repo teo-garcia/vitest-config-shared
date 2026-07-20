@@ -1,5 +1,4 @@
 import { mergeConfig } from 'vitest/config'
-import tsconfigPaths from 'vite-tsconfig-paths'
 import reactConfig from './react.js'
 
 /**
@@ -9,7 +8,9 @@ import reactConfig from './react.js'
  */
 
 const nextConfig = mergeConfig(reactConfig, {
-  plugins: [tsconfigPaths()],
+  resolve: {
+    tsconfigPaths: true,
+  },
   test: {
     include: [
       'app/**/*.{test,spec}.{ts,tsx}',

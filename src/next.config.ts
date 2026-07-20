@@ -1,11 +1,12 @@
 import { defineConfig, mergeConfig } from 'vitest/config'
 import reactConfig from './react.config.js'
-import tsconfigPaths from 'vite-tsconfig-paths'
 
 export default mergeConfig(
   reactConfig,
   defineConfig({
-    plugins: [tsconfigPaths()],
+    resolve: {
+      tsconfigPaths: true,
+    },
     test: {
       include: [
         'app/**/*.{test,spec}.{ts,tsx}',
