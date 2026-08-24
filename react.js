@@ -22,15 +22,26 @@ const config = {
     sequence: {
       hooks: 'stack',
     },
+    // Coverage contract shared by every template (frontend and backend):
+    // text for the terminal, lcov for CI upload, html for local browsing;
+    // reports land in ./coverage; generated code, test scaffolding and
+    // framework entrypoints are excluded so the numbers describe app code.
+    // Thresholds are deliberately not enforced -- templates ship a starter
+    // suite, so a floor here would fail every new project on day one.
     coverage: {
       provider: 'v8',
+      reporter: ['text', 'lcov', 'html'],
+      reportsDirectory: './coverage',
       include: ['{app,src}/**/*.{ts,tsx}'],
       exclude: [
         '**/*.{test,spec}.{ts,tsx}',
+        '**/*.d.ts',
         '**/__mocks__/**',
         '**/__screenshots__/**',
         '**/lib/test/**',
         '**/lib/mocks/**',
+        '**/*.gen.ts',
+        '**/routeTree.gen.ts',
       ],
     },
     browser: {

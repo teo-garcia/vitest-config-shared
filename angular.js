@@ -18,17 +18,24 @@ const config = {
     sequence: {
       hooks: 'stack',
     },
+    // Same coverage contract as the React config -- see react.js for the
+    // reasoning behind the reporters, the report directory and the decision
+    // not to enforce thresholds.
     coverage: {
       provider: 'v8',
+      reporter: ['text', 'lcov', 'html'],
+      reportsDirectory: './coverage',
       include: ['src/**/*.ts'],
       exclude: [
         '**/*.{test,spec}.ts',
+        '**/*.d.ts',
         '**/__mocks__/**',
         '**/lib/test/**',
         '**/lib/mocks/**',
         'src/main.ts',
         'src/main.server.ts',
         'src/server.ts',
+        'src/vitest.setup.ts',
       ],
     },
   },

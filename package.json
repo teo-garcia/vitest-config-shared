@@ -34,7 +34,7 @@
   },
   "packageManager": "pnpm@11.18.0",
   "prettier": "@teo-garcia/prettier-config-shared",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "scripts": {
     "check": "pnpm format:check && pnpm typecheck && pnpm smoke:consumer",
     "format": "prettier --write .",
