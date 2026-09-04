@@ -1,3 +1,4 @@
-import { UserConfigExport } from 'vitest/config'
-declare const nextConfig: UserConfigExport
+import type { ViteUserConfig } from 'vitest/config'
+
+declare const nextConfig: ViteUserConfig
 export default nextConfig

@@ -1,9 +1,0 @@
-{
-  "extends": "@teo-garcia/tsconfig-shared/vite-react",
-  "compilerOptions": {
-    "paths": {
-      "@/*": ["./src/*"]
-    }
-  },
-  "include": ["src/**/*", "vitest.config.ts"]
-}

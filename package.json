@@ -14,6 +14,10 @@
       "types": "./angular.d.ts"
     }
   },
+  "files": [
+    "*.d.ts",
+    "*.js"
+  ],
   "main": "./react.js",
   "name": "@teo-garcia/vitest-config-shared",
   "peerDependencies": {
@@ -21,6 +25,17 @@
     "@vitest/browser-playwright": "^4.0.0",
     "jsdom": "^26.0.0 || ^27.0.0",
     "vitest": "^4.0.0"
+  },
+  "peerDependenciesMeta": {
+    "@vitejs/plugin-react": {
+      "optional": true
+    },
+    "@vitest/browser-playwright": {
+      "optional": true
+    },
+    "jsdom": {
+      "optional": true
+    }
   },
   "private": false,
   "repository": {
@@ -36,23 +51,20 @@
   "prettier": "@teo-garcia/prettier-config-shared",
   "version": "0.4.1",
   "scripts": {
-    "check": "pnpm format:check && pnpm typecheck && pnpm smoke:consumer",
+    "check": "pnpm format:check && pnpm audit --audit-level=high && pnpm smoke:consumer",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "prepare": "husky",
     "smoke:consumer": "node scripts/consumer-smoke.mjs",
-    "typecheck": "tsc --noEmit"
+    "verify:release": "node scripts/verify-release.mjs"
   },
   "devDependencies": {
     "@teo-garcia/prettier-config-shared": "^0.2.9",
-    "@teo-garcia/tsconfig-shared": "^0.2.0",
     "@vitejs/plugin-react": "^6.0.0",
     "@vitest/browser-playwright": "^4.0.0",
     "husky": "^9.1.7",
     "lint-staged": "^17.0.0",
     "prettier": "^3.8.1",
-    "typescript": "^6.0.0",
-    "vite": "^8.0.0",
     "vitest": "^4.0.0"
   }
 }

@@ -17,10 +17,11 @@ ecosystem
 
 ## Presets
 
-| Config    | Target     | Includes                                                            |
-| --------- | ---------- | ------------------------------------------------------------------- |
-| **react** | React/Vite | Browser mode (Playwright), React plugin, globals, coverage defaults |
-| **next**  | Next.js    | React config + native tsconfig paths + Next-oriented test globs     |
+| Config      | Target     | Includes                                                            |
+| ----------- | ---------- | ------------------------------------------------------------------- |
+| **react**   | React/Vite | Browser mode (Playwright), React plugin, globals, coverage defaults |
+| **next**    | Next.js    | React config + native tsconfig paths + Next-oriented test globs     |
+| **angular** | Angular    | jsdom, globals, Angular test globs, and coverage defaults           |
 
 ---
 
@@ -28,15 +29,19 @@ ecosystem
 
 - Vitest 4+
 - Node.js 24+
+- React and Next presets: `@vitejs/plugin-react`, `@vitest/browser-playwright`,
+  and Vite 8+
+- Angular preset: `jsdom`
 
 ---
 
 ## Exports
 
-| Export                                  | Description                 |
-| --------------------------------------- | --------------------------- |
-| `@teo-garcia/vitest-config-shared`      | React/Vite config (default) |
-| `@teo-garcia/vitest-config-shared/next` | Next.js optimized config    |
+| Export                                     | Description                 |
+| ------------------------------------------ | --------------------------- |
+| `@teo-garcia/vitest-config-shared`         | React/Vite config (default) |
+| `@teo-garcia/vitest-config-shared/next`    | Next.js optimized config    |
+| `@teo-garcia/vitest-config-shared/angular` | Angular jsdom config        |
 
 ---
 
@@ -46,6 +51,7 @@ ecosystem
 - Runs tests in browser mode using Playwright + Chromium (headless)
 - Sets sane timeouts for async and browser tests
 - Applies v8 coverage defaults for source files under `src` and `app`
+- Uses jsdom instead of browser mode for the Angular preset
 
 ---
 
